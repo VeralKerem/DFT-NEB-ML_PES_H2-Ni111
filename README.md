@@ -43,6 +43,6 @@ This includes:
 
 ## 👨‍🔬 Author
 
-This project was created by [Your Name] as part of an independent research initiative to explore ML-assisted quantum simulations of surface reactions.
+This project was created by Kerem Veral as part of an independent research initiative to explore ML-assisted quantum simulations of surface reactions.
 
 > Feel free to check out the notebook for full reproducibility and discussion.
