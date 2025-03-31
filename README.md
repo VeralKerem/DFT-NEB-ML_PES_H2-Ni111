@@ -1,62 +1,48 @@
-# DFT-NEB-ML_PES_H2-Ni111
-This repository presents a density functional theory (DFT) and machine learning (ML) approach for studying H₂ adsorption on a Ni(111) surface. It includes potential energy surface (PES) construction, dissociative adsorption energy barrier calculation via NEB, and Gaussian Process Regression (GPR) modeling of the PES. 
-# 🧠 DFT + NEB + ML: Modeling H₂ Dissociative Adsorption on Ni(111)
+# 🧠 ML-Enhanced DFT Modeling of H₂ on Ni(111)
 
-This repository presents a compact yet complete pipeline for modeling the **dissociative adsorption** of H₂ on Ni(111), combining **DFT**, **NEB** and **Machine Learning**.
+This project combines first-principles **DFT simulations** and **Machine Learning** to estimate the **Potential Energy Surface (PES)** and dissociation barrier of hydrogen on a Ni(111) surface.
 
-🎯 **Project Aim**:  
-To replicate and understand the core idea behind the Leiden University PhD project on *“Predicting and Testing Reaction Barriers on Metal Surfaces”* by constructing a potential energy surface (PES) and predicting reaction barriers using GPR.
+It was developed as part of a research portfolio for PhD applications in **computational surface chemistry**, including programs such as the one at **Leiden University**.
 
 ---
 
-## 📦 Contents
+## 🔬 Key Highlights
 
-| File | Description |
-|------|-------------|
-| `calculate_slab_energy.py` | DFT energy for bare Ni(111) slab |
-| `calculate_h2_gas_energy.py` | DFT energy for H₂ in gas phase |
-| `calculate_energies.py` | DFT calculations for H₂ + slab systems at various heights |
-| `neb_run.py` | NEB script to model H₂ dissociation barrier |
-| `pes_data.csv` | Adsorption energy data |
-| `pes_plotter.py` | PES visualization |
-| `PES_ML_Notebook.ipynb` | GPR-based PES modeling and analysis |
-| `neb_manual_plot.png` | Transition state energy profile |
+- ✅ DFT calculations using GPAW for multiple H₂ heights
+- ✅ Adsorption energy computation and PES visualization
+- ✅ NEB pathway modeling for dissociative adsorption
+- ✅ Gaussian Process Regression (GPR) to model the PES
+- ✅ Model performance evaluated via LOOCV, RMSE, R²
 
 ---
 
-## 📊 What’s Inside?
+## 📓 Full Results in Notebook
 
-- ✅ **DFT calculations** using GPAW
-- ✅ **Potential Energy Surface (PES)** construction
-- ✅ **Adsorption energy** computation and visualization
-- ✅ **NEB** for dissociation barrier estimation
-- ✅ **GPR model** for PES prediction and uncertainty
-- ✅ **LOOCV** validation with RMSE and R² evaluation
+➡️ All steps, codes, results, and visual insights are documented in  
+**[`Project_Jupyter.ipynb`](./Project_Jupyter.ipynb)**
 
----
+This includes:
 
-## 🌍 Why It Matters?
-
-This workflow reflects real-world approaches to surface catalysis, showing how *data-driven modeling* (ML) can accelerate *first-principles methods* (DFT/NEB).
-
+- Geometry generation and GPAW setup  
+- PES data collection and adsorption energy analysis  
+- NEB reaction barrier profiling  
+- GPR model training, prediction, and uncertainty analysis  
+- Physical interpretation of the results
 
 ---
 
-## 🚀 Future Extensions
+## 🧪 Future Improvements
 
-- Compare different XC functionals (PBE, RPBE, SCAN, etc.)
-- Perform geometry optimizations for initial/final states
-- Include Bader charge analysis
-- Expand dataset and build 2D/3D PES
-- Try alternative ML models (Neural Networks, SVR, etc.)
-- Apply active learning for data-efficient improvement
+- Perform vibrational analysis for transition states  
+- Compare different functionals (PBE, RPBE, SCAN, etc.)  
+- Expand dataset to 2D/3D PES mapping  
+- Benchmark multiple ML models (SVR, NN, RF...)  
+- Perform Bader charge analysis for charge transfer insights
 
 ---
 
-## 📬 Contact
+## 👨‍🔬 Author
 
-For questions or collaboration ideas:
+This project was created by [Your Name] as part of an independent research initiative to explore ML-assisted quantum simulations of surface reactions.
 
-**Kerem Veral**  
-📧 keremveral98@gmail.com  
-
+> Feel free to check out the notebook for full reproducibility and discussion.
